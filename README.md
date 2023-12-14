@@ -1,4 +1,5 @@
 This is a composable OTP
+## How to build on your environment
 
 ## Step 1. Add the Verif-Swift library to your build file
 Add it to your root build.gradle at the end of repositories:
@@ -19,3 +20,6 @@ dependencies {
 	        implementation("com.github.osamasayed585:Verify-Swift:1.0.0")
 	}
 ```
+
+
+
