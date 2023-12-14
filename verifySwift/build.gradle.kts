@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.JvmAnalysisFlags.useIR
-
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
