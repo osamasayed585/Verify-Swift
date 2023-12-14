@@ -1,5 +1,5 @@
 This is a composable OTP
-## To get a Git project into your build:
+
 ## Step 1. Add the Verif-Swift library to your build file
 Add it to your root build.gradle at the end of repositories:
 
