@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.config.JvmAnalysisFlags.useIR
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -15,14 +17,6 @@ android {
         consumerProguardFiles("consumer-rules.pro")
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -32,6 +26,16 @@ android {
             )
         }
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
     buildFeatures {
         compose = true
     }
@@ -60,7 +64,7 @@ afterEvaluate {
         publications {
             register<MavenPublication>("release") {
                 groupId = "com.github.osamasayed585"
-                artifactId = "verify-swift"
+                artifactId = "Verify-Swift"
                 version = "1.1.0"
             }
         }
