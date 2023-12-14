@@ -67,5 +67,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    implementation(project(":verifySwift"))
+    implementation("com.github.osamasayed585:Verify-Swift:1.0.0")
 }

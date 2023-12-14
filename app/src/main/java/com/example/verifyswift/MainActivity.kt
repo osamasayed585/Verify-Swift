@@ -45,7 +45,6 @@ fun EditOtpViewPreview() {
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
-
             MyOtpView(
                 otpValue = "",
                 isError = false,
