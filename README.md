@@ -14,6 +14,8 @@ dependencyResolutionManagement {
 ```
 ## Step 2. Add the dependency
 
-```dependencies {
+```
+dependencies {
 	        implementation("com.github.osamasayed585:Verify-Swift:1.0.0")
-	}```
+	}
+```
