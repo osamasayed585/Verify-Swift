@@ -16,6 +16,7 @@ dependencyResolutionManagement {
     }
 }
 
+
 rootProject.name = "Verify Swift"
 include(":app")
 include(":verifySwift")

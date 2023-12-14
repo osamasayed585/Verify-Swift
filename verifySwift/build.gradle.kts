@@ -62,7 +62,8 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            register<MavenPublication>("release") {
+            create<MavenPublication>("release") {
+                from(components["release"])
                 groupId = "com.github.osamasayed585"
                 artifactId = "Verify-Swift"
                 version = "1.1.1"
