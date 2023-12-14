@@ -66,7 +66,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.osamasayed585"
                 artifactId = "Verify-Swift"
-                version = "1.1.1"
+                version = "1.0.0"
             }
         }
     }
