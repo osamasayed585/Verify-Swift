@@ -61,7 +61,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.github.osamasayed585"
                 artifactId = "verify-swift"
-                version = "1.0"
+                version = "1.0.0"
             }
         }
     }
