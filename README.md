@@ -4,6 +4,10 @@ Check out Verify-Swift! It's a handy tool for adding secure codes to your app. U
 </p>
 <br>
 
+![dark verify swift](images/dark_verify_swift.png)
+
+![dark verify swift](images/light_verify_swift.png)
+
 ## Getting Started
 Add it to your root build.gradle at the end of repositories:
 
