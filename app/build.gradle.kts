@@ -67,5 +67,7 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
     implementation("com.github.osamasayed585:Verify-Swift:1.0.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 }
