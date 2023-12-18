@@ -56,7 +56,7 @@ fun SwiftAuthUsageExample() {
 | `onOtpTextChange`     | Callback function invoked when the OTP text changes. Takes the updated OTP string as a parameter.                 |
 | `onCompletedNumbers`  | Callback function triggered when the user completes entering the OTP, specified Unit                                            |
 | `isError`             | Boolean flag indicating whether an error state should be displayed.                                               |
-| `password`            | Boolean flag indicating whether it is visible or not.                                               |
+| `isPassword`            | Boolean flag indicating whether it is visible or not.                                               |
 | `enable`              | Boolean flag indicating whether it is enabled or disabled.                                               |
 | `pinCount`            | Number of digits in the OTP. Default is 4.                                                                      |
 | `containerHeight`     | Height of the container holding the OTP input, specified in Density-independent Pixels (Dp).                      |
@@ -78,7 +78,7 @@ The `SwiftAuth` composable offers a range of customizable parameters to tailor t
    - Set the desired number of pins for the OTP input using the `pinCount` parameter.
 
 2. **Hide/Show Input:**
-   - Toggle the visibility of the OTP input for secure entry. Utilize the `password` parameter to control visibility.
+   - Toggle the visibility of the OTP input for secure entry. Utilize the `isPassword` parameter to control visibility.
 
 3. **Custom Pin Height:**
    - Adjust the height of each pin in the OTP input with the `containerHeight` parameter.
