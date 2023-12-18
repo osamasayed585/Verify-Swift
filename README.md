@@ -52,6 +52,8 @@ fun SwiftAuthUsageExample() {
 | `onOtpTextChange`     | Callback function invoked when the OTP text changes. Takes the updated OTP string as a parameter.                 |
 | `onCompletedNumbers`  | Callback function triggered when the user completes entering the OTP, specified Unit                                            |
 | `isError`             | Boolean flag indicating whether an error state should be displayed.                                               |
+| `password`            | Boolean flag indicating whether it is visible or not.                                               |
+| `enable`              | Boolean flag indicating whether it is enabled or disabled.                                               |
 | `pinCount`            | Number of digits in the OTP. Default is 4.                                                                      |
 | `containerHeight`     | Height of the container holding the OTP input, specified in Density-independent Pixels (Dp).                      |
 | `containerWidth`      | Width of the container holding the OTP input, specified in Density-independent Pixels (Dp).                       |
@@ -72,7 +74,7 @@ The `SwiftAuth` composable offers a range of customizable parameters to tailor t
    - Set the desired number of pins for the OTP input using the `pinCount` parameter.
 
 2. **Hide/Show Input:**
-   - Toggle the visibility of the OTP input for secure entry. Utilize the `visibility` parameter to control visibility.
+   - Toggle the visibility of the OTP input for secure entry. Utilize the `password` parameter to control visibility.
 
 3. **Custom Pin Height:**
    - Adjust the height of each pin in the OTP input with the `containerHeight` parameter.
@@ -103,6 +105,9 @@ The `SwiftAuth` composable offers a range of customizable parameters to tailor t
     
 12. **Dark and Light Theme Support:**
     - Seamlessly integrate `SwiftAuth` into applications with support for both dark and light themes. The composable adapts to the theme set in the application, providing a consistent user experience across different themes.
+
+13. **enable/ disable**
+    - Boolean flag indicating whether it is enabled or disabled.
 
 These themeable parameters provide developers with the flexibility to seamlessly integrate `SwiftAuth` into their applications while maintaining control over the visual style and user experience.
 
