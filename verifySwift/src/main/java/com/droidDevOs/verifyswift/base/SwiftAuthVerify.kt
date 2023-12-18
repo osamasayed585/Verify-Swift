@@ -168,7 +168,7 @@ fun CharView(
  * @param onOtpTextChange: Callback function invoked when the OTP text changes. Takes the updated OTP string as a parameter.
  * @param onCompletedNumbers: Callback function triggered when the user completes entering the OTP, specified Unit.
  * @param isError: Boolean flag indicating whether an error state should be displayed.
- * @param password: Boolean flag indicating whether it is visible or not.
+ * @param isPassword: Boolean flag indicating whether it is visible or not.
  * @param enabled: Boolean flag indicating whether it is enabled or disabled.
  * @param pinCount: Number of digits in the OTP. Default is 4.
  * @param containerHeight: Height of the container holding the OTP input, specified in Density-independent Pixels (Dp).
