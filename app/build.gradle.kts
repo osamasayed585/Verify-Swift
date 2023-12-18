@@ -71,5 +71,5 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 
-    implementation("com.github.osamasayed585:Verify-Swift:1.0.0")
+    implementation("com.github.osamasayed585:Verify-Swift:1.1.0")
 }
