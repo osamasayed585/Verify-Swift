@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
@@ -25,7 +24,6 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
@@ -57,7 +55,7 @@ fun VerifySwift(
     passwordChar: String = "▪",
     onCompletedNumbers: () -> Unit,
     keyboardOptions: KeyboardOptions = KeyboardOptions(
-        keyboardType = KeyboardType.Number,
+        keyboardType = KeyboardType.NumberPassword,
         imeAction = ImeAction.Done
     ),
     onOtpTextChange: (String) -> Unit
@@ -130,23 +128,25 @@ fun CharView(
         .width(containerWidth)
         .background(charBackground)
 
+    val char = when {
+        index >= text.length -> ""
+        password -> passwordChar
+        else -> text[index].toString()
+    }
+
     Column(
+        modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        val char = when {
-            index >= text.length -> ""
-            password -> passwordChar
-            else -> text[index].toString()
-        }
         Text(
+            modifier = Modifier.height(32.dp),
             text = char,
             color = charColor,
-            modifier = modifier.wrapContentHeight(),
             fontSize = charSize,
-            textAlign = TextAlign.Center,
             fontWeight = FontWeight.Medium
         )
+
         if (type == PinViewType.UNDERLINE) {
             Spacer(modifier = Modifier.height(2.dp))
             Box(
