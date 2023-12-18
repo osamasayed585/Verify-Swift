@@ -1,4 +1,4 @@
-package com.example.verifyswift.theme
+package com.droidDevOs.verifyswift.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes
