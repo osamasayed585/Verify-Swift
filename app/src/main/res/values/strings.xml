@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Verify Swift</string>
+    <string name="confirm">Confirm</string>
+    <string name="when_an_error_occurs">when an error occurs</string>
+    <string name="when_an_otp_specified">when an OTP specified</string>
+    <string name="when_an_password_specified">when an password specified</string>
+    <string name="shapes">Shapes</string>
+    <string name="states">States</string>
 </resources>
