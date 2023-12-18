@@ -25,7 +25,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-	        implementation("com.github.osamasayed585:Verify-Swift:1.0.0")
+	        implementation("com.github.osamasayed585:Verify-Swift:1.1.0")
 	}
 ```
 ## SwiftAuth Composable
