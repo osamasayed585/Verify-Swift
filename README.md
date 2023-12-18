@@ -99,7 +99,10 @@ The `SwiftAuth` composable offers a range of customizable parameters to tailor t
     - Define the normal state color of characters in the OTP input using the `charNormalColor` parameter.
 
 11. **Background Color:**
-    - Customize the background color of characters in the OTP input with the `charBackground` parameter.
+    - Customize the background color of characters in the OTP input with the `charBackground` parameter
+    
+12. **Dark and Light Theme Support:**
+    - Seamlessly integrate `SwiftAuth` into applications with support for both dark and light themes. The composable adapts to the theme set in the application, providing a consistent user experience across different themes.
 
 These themeable parameters provide developers with the flexibility to seamlessly integrate `SwiftAuth` into their applications while maintaining control over the visual style and user experience.
 
