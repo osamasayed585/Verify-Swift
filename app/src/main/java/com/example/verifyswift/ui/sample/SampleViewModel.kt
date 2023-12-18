@@ -3,6 +3,8 @@ package com.example.verifyswift.ui.sample
 import com.example.verifyswift.base.BaseViewModel
 import com.example.verifyswift.ui.sample.event.SampleEvent
 import com.example.verifyswift.ui.sample.state.SampleState
+import com.example.verifyswift.ui.sample.state.ShapesOptions
+import com.example.verifyswift.ui.sample.state.StatesOptions
 
 
 class SampleViewModel : BaseViewModel<SampleState, SampleEvent>(SampleState()) {
@@ -21,7 +23,9 @@ class SampleViewModel : BaseViewModel<SampleState, SampleEvent>(SampleState()) {
             is SampleEvent.OnSelectShape -> {
                 createNewState(
                     oldState.copy(
-                        selectedShape = sideEffect.option
+                        selectedShape = sideEffect.option,
+                        selectedShapeValue = ShapesOptions.getShapeValue(sideEffect.option),
+                        containerHeight = ShapesOptions.getContainerHeight(sideEffect.option),
                     )
                 )
             }
@@ -29,7 +33,9 @@ class SampleViewModel : BaseViewModel<SampleState, SampleEvent>(SampleState()) {
             is SampleEvent.OnSelectState -> {
                 createNewState(
                     oldState.copy(
-                        selectedState = sideEffect.option
+                        selectedState = sideEffect.option,
+                        isPassword = sideEffect.option == StatesOptions.Secret.option,
+                        isError = sideEffect.option == StatesOptions.Error.option,
                     )
                 )
             }
@@ -48,9 +54,17 @@ class SampleViewModel : BaseViewModel<SampleState, SampleEvent>(SampleState()) {
         emitEvent(SampleEvent.OnValueFilled(newValue))
     }
 
-    fun onCloseKeyboard() {
+    fun onCloseKeyboard(count: Int) {
         emitEvent(
-            SampleEvent.OnCloseKeyboard(uiState.value.otp.length == 4)
+            SampleEvent.OnCloseKeyboard(uiState.value.otp.length == count)
         )
+    }
+
+    fun onSelectState(state: String) {
+        emitEvent(SampleEvent.OnSelectState(state))
+    }
+
+    fun onSelectShape(shape: String) {
+        emitEvent(SampleEvent.OnSelectShape(shape))
     }
 }

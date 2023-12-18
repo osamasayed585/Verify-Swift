@@ -2,7 +2,7 @@ package com.example.verifyswift.components
 
 import android.content.res.Configuration
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.BrightnessMedium
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -28,7 +28,7 @@ fun VerifySwiftTopBar(
             IconButton(
                 onClick = isLightTheme
             ) {
-                Icon(Icons.Filled.Settings, contentDescription = null)
+                Icon(Icons.Default.BrightnessMedium, contentDescription = null)
             }
         }
     )

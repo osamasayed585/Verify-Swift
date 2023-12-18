@@ -18,12 +18,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             var isLightTheme by remember { mutableStateOf(false) }
             VerifySwiftTheme(isLightTheme) {
-
                 Scaffold(
                     topBar = { VerifySwiftTopBar { isLightTheme = !isLightTheme } }
                 ) { innerPadding ->
-                    SampleScreen(innerPadding)
-
+                    innerPadding.apply { SampleScreen() }
                 }
             }
         }
